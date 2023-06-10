@@ -3,12 +3,13 @@
 
 let product = prompt("Введите название продукта:", "Бананы");
 
-switch (product) {
-    case "Мандарины":
+switch (product.toLowerCase()) {
+    case "мандарины":
         alert("Мандарины стоят 100 руб/кг.");
         break;
-    case "Бананы":
-        alert("Бананы стоят 150 руб/кг.");
+    case "бананы":
+    case "груши":
+        alert("Бананы и груши стоят 150 руб/кг.");
         break;
     default:
         alert ("Нет такого продукта")
